@@ -2,6 +2,8 @@
 
 The source IP of a UDP packet can be spoofed, thus allowing an attacker to craft a packet to for example a LDAP server, and request it to send the data to the victims IP. Effectively overloading victim's bandwidth with traffic from a legit IP. Luckily most of these ports are often not in use and can be blocked using a fast ACL.
 
+![image](https://user-content.gitlab-static.net/6929395e0cc76f6903ea741a8a9f7283bad3753a/68747470733a2f2f626c6f672e636c6f7564666c6172652e636f6d2f636f6e74656e742f696d616765732f696c6c757374726174696f6e2d616d706c696669636174696f6e2d61747461636b2d7068332e706e67)
+
 # common ports
 ```
 dest == 100   // random
