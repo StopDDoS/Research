@@ -17,10 +17,8 @@ dest == 520   //  RIP
 dest == 500   //  ISAKMP
 dest == 177   // XDMCP
 
-// UNTESTED
-dest == 3283  //  ARD/ARMS (apple remote desktop & management
-dest == 3702  // WS-Disvoery / WS-DD  ( Web Services Dynamic Discovery (WS-Discovery)
-// END UNTESTED
+source == 3283  //  ARD/ARMS (apple remote desktop & management
+source == 3702  // WS-Disvoery / WS-DD  ( Web Services Dynamic Discovery (WS-Discovery)
 
 dest == 137 
 dest == 138  // NETBIOS NBDS
@@ -40,20 +38,15 @@ source == 1900 /* SSDP*/
 
 Several UDP ports used for other "bypasses":
 ```
-source == 3283 
 source == 37810 
 source == 7001 
 source == 17185 
 source == 3072 
 source == 32414 
 source == 6881 
-source == 5683 
 source == 41794 
 source == 2362 
-source == 11211 
 source == 53413 
-source == 1900 
 source == 10001
-source == 5351 
 source == 502
 ```
