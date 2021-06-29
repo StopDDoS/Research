@@ -50,3 +50,14 @@ source == 53413
 source == 10001
 source == 502
 ```
+
+## Important: DNS-based attack
+While DNS-based attacks are extremely common, it can often not *just be blocked* as it is a vital part of a network. While the best solution would be to use a local DNS server inside of the network. You can also filter for a dns ANY response:
+`iptables -t raw -A PREROUTING -p udp --sport 53 -m string --from 40 --algo bm --hex-string '|00 00 ff 00 01|' -j DROP`
+
+Often these packets are made arbitrarily big and may fragment. So it is recommended to also block fragmented packets if receive DNS-based DDoS attacks.
+
+## Important: Fragmentation
+While it illogical, not all UDP (and TCP) packets require a L4 header. If a packet is larger than the network MTU (often around 1500 bytes) the IP protocol allows it to be split up in multiple packets, where only the first packet has to have a L4(UDP/TCP) header. 
+
+It is not smart to blanket-ban fragmented packets, but often required to block big attacks. While a normal server should never receive fragmented packets. An office with people watching videos or RDP streams may receive fragmented packets. If this is the case then it is better to ratelimit fragmented packets.
