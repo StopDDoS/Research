@@ -64,4 +64,6 @@ SSL > Edge Certificates > Minimum TLS Version > v1.2
 Attackers can often still find your backend IP through a ssl certificate or host header spoofing. It is recommended to block non-cloudflare traffic.
 For how to do that, see https://frankindev.com/2020/11/18/allow-cloudflare-only-in-nginx/
 
+You should also make sure that visiting your machine's ip address does not redirect to / show the main site. I always reccomend setting up a barebones http fallback page and a https version with a selfsigned certificate (or cloudflare's origin certificate). Anything that does not match your main site and does not reference the main domain name will help.
+
 As always, i recommend using nginx and not apache. It is generally more optimized for this kind of high-performance processing.
