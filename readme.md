@@ -25,3 +25,5 @@ The most important terms are:
 
 ### Contributing
 Has this article helped you or do you want to contribute? You are very welcome to open up a Github issue or PR request. Only together we can end this problem that is DDoS.
+
+![book](https://cdn.discordapp.com/attachments/739789516247924746/865210032324739073/CRASHS_GUIDE_1.png)
