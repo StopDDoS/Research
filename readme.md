@@ -9,7 +9,7 @@ TCP reflection attacks (RST, SYNACK) [tcpreflection.md](https://github.com/NoMor
 UDP reflection attacks (LDAP, DNS, etc.) [udp.md](https://github.com/NoMoreDDoS/Research/blob/main/udp.md)
 
 ## Mitigation methods
-Simplest: any external scrubber service: voxtility, akamai, cloudflare, TCPShield etc
+Simplest: any external scrubber service: voxility, akamai, cloudflare, TCPShield etc
 
 Or: In-house, based on software like wanguard or custom detection.
 
