@@ -6,7 +6,7 @@
 
 - cookie: set a cookie and read again
 
-- captcha
+- captcha (non-interaction) preferably, or interaction if highly suspcious but not block-worthy.
 
 - cooke+aes: set a cookie through js and have the frontend decrypt it and send it back for verification (against scraping)
 
