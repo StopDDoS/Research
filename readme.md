@@ -11,7 +11,7 @@ UDP reflection attacks (LDAP, DNS, etc.) [udp.md](https://github.com/NoMoreDDoS/
 ## Mitigation methods
 Simplest: any external scrubber service: voxility, akamai, cloudflare, TCPShield etc
 
-Or: In-house, based on software like wanguard or custom detection.
+Or: In-house, based on software like wanguard, corero or custom detection.
 
 ## Layers: networking jargon
 ![image](https://micrium.com/wp-content/uploads/2014/03/OSI-Seven-Layer-Model.png)
