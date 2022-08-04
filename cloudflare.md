@@ -60,7 +60,7 @@ SSL > Edge Certificates > Minimum TLS Version > v1.2
 ```
 
 
-# Important: block cloudflare access to your backend server.
+# Important: block non-cloudflare access to your backend server.
 Attackers can often still find your backend IP through a ssl certificate or host header spoofing. It is recommended to block non-cloudflare traffic.
 For how to do that, see https://frankindev.com/2020/11/18/allow-cloudflare-only-in-nginx/
 
