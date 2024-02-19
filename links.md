@@ -48,6 +48,9 @@ https://essay.utwente.nl/80125/1/vanwieren_MA_DACS.pdf
 
 https://events19.linuxfoundation.org/wp-content/uploads/2017/12/Super-Fast-Packet-Filtering-with-eBPF-and-XDP-Helen-Tabunshchyk-Cloudflare-1.pdf
 
+search DoS and you will find 9 relavent PCAPs: https://tshark.dev/search/pcaptable/
+
+
 
 
 
